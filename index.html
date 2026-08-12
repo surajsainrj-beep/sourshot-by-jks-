@@ -244,7 +244,9 @@
 
       <!-- PAYMENT LINK - BAAD MEIN CHANGE KARNA -->
       <a
-        href="YOUR_PAYMENT_LINK"
+        href=<button onclick="openMembership()" class="btn payment">
+  💳 PREMIUM MEMBERSHIP
+</button>
         target="_blank"
         class="btn payment">
         💳 PREMIUM MEMBERSHIP
@@ -308,6 +310,192 @@
   </div>
 
 </section>
+<!-- Premium Membership Popup -->
+<div id="membershipPopup" class="popup-overlay">
 
+  <div class="membership-popup">
+
+    <button class="close-btn" onclick="closeMembership()">×</button>
+
+    <div class="premium-icon">👑</div>
+
+    <h2>Premium Membership</h2>
+
+    <p class="premium-subtitle">
+      Unlock premium gaming community benefits.
+    </p>
+
+    <div class="membership-plan">
+      <span>PREMIUM</span>
+      <strong>₹199</strong>
+      <small>/ Month</small>
+    </div>
+
+    <div class="benefits">
+      <p>✓ Premium gaming updates</p>
+      <p>✓ Members-only community</p>
+      <p>✓ Exclusive gaming content</p>
+      <p>✓ Priority community access</p>
+    </div>
+
+    <!-- बाद में अपने legitimate payment checkout link से बदलना -->
+    <a
+      href="YOUR_PAYMENT_CHECKOUT_LINK"
+      target="_blank"
+      class="pay-now">
+      💳 PAY NOW
+    </a>
+
+    <p class="secure-text">
+      🔒 Secure checkout
+    </p>
+
+  </div>
+
+</div>
+
+<style>
+.popup-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,.82);
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.membership-popup {
+  position: relative;
+  width: 100%;
+  max-width: 390px;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 22px;
+  background: linear-gradient(145deg,#180000,#080808);
+  border: 1px solid #ff2020;
+  box-shadow:
+    0 0 25px rgba(255,0,0,.35),
+    0 0 80px rgba(255,0,0,.15);
+  animation: popupIn .25s ease;
+}
+
+@keyframes popupIn {
+  from {
+    opacity: 0;
+    transform: scale(.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border: 0;
+  background: transparent;
+  color: #aaa;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: white;
+}
+
+.premium-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.membership-popup h2 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.premium-subtitle {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.membership-plan {
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: rgba(255,0,0,.08);
+  border: 1px solid rgba(255,0,0,.25);
+}
+
+.membership-plan span {
+  display: block;
+  color: #ff3434;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.membership-plan strong {
+  font-size: 38px;
+}
+
+.membership-plan small {
+  color: #999;
+}
+
+.benefits {
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.benefits p {
+  color: #ccc;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.pay-now {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  background: linear-gradient(135deg,#ff2020,#8b0000);
+  box-shadow: 0 0 20px rgba(255,0,0,.3);
+}
+
+.pay-now:hover {
+  transform: translateY(-2px);
+}
+
+.secure-text {
+  color: #666;
+  font-size: 11px;
+  margin-top: 13px;
+}
+</style>
+
+<script>
+function openMembership() {
+  document.getElementById("membershipPopup").style.display = "flex";
+}
+
+function closeMembership() {
+  document.getElementById("membershipPopup").style.display = "none";
+}
+
+document.getElementById("membershipPopup").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeMembership();
+  }
+});
+</script>
 </body>
 </html>
