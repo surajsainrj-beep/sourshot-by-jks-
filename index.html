@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YOUR BRAND NAME | Gaming Community</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #050505;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      min-height: 100vh;
+      padding: 35px 20px 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% 20%, #5c0000 0%, transparent 40%),
+        linear-gradient(180deg, #100000, #050505 70%);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .logo {
+      width: 230px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ff1717;
+      box-shadow:
+        0 0 20px #ff0000,
+        0 0 60px rgba(255, 0, 0, .45);
+      margin-bottom: 25px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 9px 18px;
+      border-radius: 30px;
+      border: 1px solid #ff2020;
+      color: #ff4c4c;
+      background: rgba(255, 0, 0, .08);
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 9vw, 82px);
+      line-height: .95;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      text-shadow: 0 0 30px rgba(255, 0, 0, .6);
+    }
+
+    h1 span {
+      color: #ff1717;
+    }
+
+    .subtitle {
+      max-width: 650px;
+      margin: auto;
+      color: #bdbdbd;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .buttons {
+      margin: 32px 0 55px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: white;
+      padding: 16px 30px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: .3s;
+      display: inline-block;
+    }
+
+    .telegram {
+      background: #168cff;
+      box-shadow: 0 0 25px rgba(22, 140, 255, .4);
+    }
+
+    .payment {
+      background: linear-gradient(135deg, #ff1717, #8d0000);
+      box-shadow: 0 0 25px rgba(255, 0, 0, .4);
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-bottom: 35px;
+    }
+
+    .stat {
+      padding: 25px 15px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,0,0,.2);
+      border-radius: 15px;
+    }
+
+    .stat h2 {
+      color: #ff2424;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .stat p {
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      padding: 28px 20px;
+      border-radius: 17px;
+      background: rgba(255,255,255,.035);
+      border: 1px solid rgba(255,255,255,.08);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #ff2020;
+      box-shadow: 0 0 25px rgba(255,0,0,.15);
+    }
+
+    .icon {
+      font-size: 38px;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #999;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 50px;
+      color: #555;
+      font-size: 12px;
+    }
+
+    @media (max-width: 650px) {
+
+      .logo {
+        width: 175px;
+        height: 175px;
+      }
+
+      .stats,
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .subtitle {
+        font-size: 15px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 330px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<section class="hero">
+
+  <div class="container">
+
+    <!-- YOUR LOGO -->
+    <img src="logo.jpg" class="logo" alt="Gaming Logo">
+
+    <div class="badge">
+      🎮 OFFICIAL GAMING COMMUNITY
+    </div>
+
+    <h1>
+      YOUR <span>BRAND</span><br>
+      NAME
+    </h1>
+
+    <p class="subtitle">
+      Welcome to our gaming community. Get the latest gaming
+      updates, events, tournaments and connect with gamers.
+    </p>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+
+      <!-- TELEGRAM LINK - BAAD MEIN CHANGE KARNA -->
+      <a
+        href=https://t.me/+scIYH0xecoIyYzdl
+        target="_blank"
+        class="btn telegram">
+        ✈️ JOIN TELEGRAM
+      </a>
+
+      <!-- PAYMENT LINK - BAAD MEIN CHANGE KARNA -->
+      <a
+        href="YOUR_PAYMENT_LINK"
+        target="_blank"
+        class="btn payment">
+        💳 PREMIUM MEMBERSHIP
+      </a>
+
+    </div>
+
+    <!-- STATS -->
+    <div class="stats">
+
+      <div class="stat">
+        <h2>10K+</h2>
+        <p>Community Members</p>
+      </div>
+
+      <div class="stat">
+        <h2>100+</h2>
+        <p>Gaming Updates</p>
+      </div>
+
+      <div class="stat">
+        <h2>24/7</h2>
+        <p>Community Activity</p>
+      </div>
+
+    </div>
+
+    <!-- FEATURES -->
+    <div class="features">
+
+      <div class="card">
+        <div class="icon">🎮</div>
+        <h3>Gaming Updates</h3>
+        <p>
+          Latest gaming news, updates and interesting content.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏆</div>
+        <h3>Tournaments</h3>
+        <p>
+          Discover gaming events and competitive tournaments.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔥</div>
+        <h3>Gaming Community</h3>
+        <p>
+          Connect with gamers and become part of the community.
+        </p>
+      </div>
+
+    </div>
+
+    <footer>
+      © 2026 YOUR BRAND NAME • Gaming Community
+    </footer>
+
+  </div>
+
+</section>
+
+</body>
+</html>
